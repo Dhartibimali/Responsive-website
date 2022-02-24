@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page </title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+      function validateForm() {
+        let x = document.forms["myForm"]["name"].value;
+        if (x == "") {
+          alert("Name must be filled out");
+          return false;
+        }
+
+        }
+      
+      </script>
+</head>
+
+<style>
+  body{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: small;
+      line-height: 1.6;
+      background-color: lightgrey;
+      opacity: 1.6;
+      
+  }
+   ul{
+      margin: 0;
+      padding: 0;
+  }
+  header li{
+      float: left;
+      display: inline;
+      padding-top: 0;
+      padding-right:20px ;
+      padding-bottom: 0;
+      padding-left: 20px;
+  }
+
+li a {
+display: flex;
+padding: 8px;
+text-transform: uppercase;
+text-decoration: none;
+color: rgb(185, 88, 88);
+
+}
+header #heading{
+ float: left;
+}
+header #heading h1{
+ margin: 0;
+}
+header nav{
+ float:right;
+ margin-top: 10px;
+}
+header .highspot, header .replace a{
+ color: brown;
+ font-weight: bold;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+</style>
+<body>
+  <header>
+    <div class="box">
+        <div id="heading">
+
+            <h1><span class="highspot">Contact</span></h1>
+        </div>
+        <nav>
+           <ul>
+               <li><a href="index.html">Home</a></li>
+               <li ><a href="about.html">About</a></li>
+               <li class="replace"><a href="contact.html">Contact</a></li>
+               
+           </ul> 
+        </nav>
+    </div>
+</header>
+
+<section id="label">
+  <div class="Container">
+    <div class="Form">
+     
+      <div class="input-details">
+                <div class="info">
+          <form  name="myForm" onsubmit="return validateForm()" method="post">
+            
+            <h1 class="title">Contact Me</h1>
+                  <div class="details">  
+                    <label for="name"> FullName:</label>
+                    <br>
+                    
+                   <input  type="text" placeholder=" Full Name" name="name" >  
+                  </div>
+                  <br>
+                  <div class="details">  
+                    <label for="email"> Email:</label>
+                    <br>
+                    <input  type="email" placeholder=" Email id" name="email" >  
+                   </div>
+                   <br>
+                   <div class="details">  
+                    <label for="address"> Address:</label>
+                    <br>
+                    <input  type="text" placeholder=" Address" name="address" >  
+                   </div>
+                   <br>
+                   <div class="details"> 
+                      <label for="Phone"> Phone:</label>
+                      <br>
+                    <input  type="number" placeholder=" Phone Number" name="Phone" >  
+                   </div>
+                   <br>
+                   <div class="details">
+                    <label for="message">Message:</label>
+                    <br>
+                    <textarea name="message"  class="message" placeholder="Leave a messsage"></textarea>
+                    </div>
+                    <br>
+                    <div >
+                     
+                    <button type="submit" class="btn">Sumbit</button>
+                    </div>
+                  </form>
+                 
+        </div>
+      </div>
+      <div class="contact">
+        <h3 class="title">
+           Let's get connected.
+        </h3>
+        <p class="paragraph">
+         Hey! Everybody lets get connected through
+         <br> different media.
+        </p>
+        <div class="information">
+        <img src="images/location.png" alt="location" class="imgaess">
+        <p class="p">Chabahil, Kathmandu</p>
+      </div>
+      <div class="information">
+        <img src="images/phone.png" alt="phone" class="imgaess">
+        <p class="p">980734594</p>
+      </div>
+      <div class="information">
+        <img src="images/linkedin.png" alt="linkedin" class="imgaess">
+        <p class="p">Chabahil, Kathmandu</p>
+
+      </div>
+      <div class="information">
+        <img src="images/Email.png" alt="email" class="imgaess">
+        <p class="p">dhartibimali8@gmail.com</p>
+      </div>
+      <div class="information">
+        <img src="images/facebook.png" alt="facebook" class="imgaess">
+        <p class="p">Dharti Bimali</p>
+      </div>
+      <div class="information">
+        <img src="images/insta.png" alt="insta" class="imgaess">
+        <p class="p">Dharti Bimali</p>
+      </div>
+    </div>
+    
+  </div>
+  </section>
+
+  
+</body>
+</html>
